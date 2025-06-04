@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "EB Garamond", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(13, 148, 136)
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(233, 233, 233);
+}
