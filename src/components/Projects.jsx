@@ -5,9 +5,9 @@ const Projects = () => {
   return (
     <div
       id="Projects"
-      className="scroll-mt-24 flex min-h-screen w-full flex-col items-center justify-center gap-20 p-10 md:p-16 md:scroll-mt-0 xl:px-32"
+      className="scroll-mt-24 flex min-h-screen w-full flex-col items-center justify-center gap-13 px-5 md:p-16 md:scroll-mt-0 xl:px-32"
     >
-      <h1 className="bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-6xl font-semibold text-transparent h-18 md:text-7xl md:h-20 lg-text-7xl">Projects</h1>
+      <h1 className="bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-3xl font-semibold text-transparent h-12 md:text-7xl md:h-20 lg-text-7xl">Projects</h1>
 
       <div className="flex flex-col items-center gap-10 w-full max-w-6xl">
         

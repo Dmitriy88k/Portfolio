@@ -66,17 +66,17 @@ const Contact = () => {
 
     return (
         <div>
-            <motion.div initial={{opacity: 0, x:-200}} transition={{duration: 1.2}} whileInView={{opacity: 1, x:0}} viewport={{once:true}} id="Contact" className="scroll-mt-24 flex min-h-screen w-full flex-col items-center justify-center p-8 md:scroll-mt-0">
-                <h1 className="bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-6xl font-semibold text-transparent h-18 md:text-7xl md:h-20 lg-text-7xl">Let's Connect</h1>
-                <p className="max-w-[500px] text-sm text-gray-500 text-center pb-5">Send me a message using the form below — your inquiry will be delivered directly to my inbox and I’ll personally get back to you.</p>
+            <motion.div initial={{opacity: 0, x:-200}} transition={{duration: 1.2}} whileInView={{opacity: 1, x:0}} viewport={{once:true}} id="Contact" className="scroll-mt-24 flex min-h-screen w-full flex-col items-center justify-center p-5 md:scroll-mt-0">
+                <h1 className="bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-4xl font-semibold text-transparent h-18 md:text-7xl md:h-20 lg-text-7xl">Let's Connect</h1>
+                <p className="max-w-[500px] text-sm text-gray-500 text-center pb-2">Send me a message using the form below — your inquiry will be delivered directly to my inbox and I’ll personally get back to you.</p>
 
-                <form onSubmit={onSubmit} className="flex w-full max-w-md flex-col gap-8 rounded-lg p-6 md:max-w-lg lg:max-w-xl">
-                    <div className="flex flex-col gap-7 ">
-                        <input type="text" name="name" placeholder="Your Name" required className="rounded-lg border-2 border-teal-400 px-4 py-3 text-lg outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"/>
-                        <input type="text" name="company" placeholder="Company Name (optional)" className="rounded-lg border-2 border-teal-400 px-4 py-3 text-lg outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"/>
-                        <input type="text" name="email" placeholder="Your Email" required  className="rounded-lg border-2 border-teal-400 px-4 py-3 text-lg outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"/>
-                        <input type="tel"  name="phone" value={phone} onChange={handleChange} maxLength={17} placeholder="Phone Number (optional)" className="rounded-lg border-2 border-teal-400 px-4 py-3 text-lg outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"/>
-                        <textarea name="message" id="" placeholder="Your Message" required  className="rounded-lg border-2 border-teal-400 px-4 py-3 text-lg outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500 h-30 md:h-40"></textarea>
+                <form onSubmit={onSubmit} className="flex w-full max-w-md flex-col gap-8 rounded-lg p-10 md:max-w-lg lg:max-w-xl">
+                    <div className="flex flex-col gap-7 text-lg">
+                        <input type="text" name="name" placeholder="Your Name" required className="rounded-lg border-2 border-teal-400 px-4 py-3 text-sm outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"/>
+                        <input type="text" name="company" placeholder="Company Name (optional)" className="rounded-lg border-2 border-teal-400 px-4 py-3 text-sm outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"/>
+                        <input type="text" name="email" placeholder="Your Email" required  className="rounded-lg border-2 border-teal-400 px-4 py-3 text-sm outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"/>
+                        <input type="tel"  name="phone" value={phone} onChange={handleChange} maxLength={17} placeholder="Phone Number (optional)" className="rounded-lg border-2 border-teal-400 px-4 py-3 text-sm outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500"/>
+                        <textarea name="message" id="" placeholder="Your Message" required  className="rounded-lg border-2 border-teal-400 px-4 py-3 text-sm outline-none transition-all duration-200 hover:bg-teal-50 focus:ring-2 focus:ring-teal-500 h-30 md:h-40"></textarea>
                         <button className="rounded-lg border-2 border-teal-400 bg-teal-500 px-6 py-3 font-semibold text-white transition-all duration-200 hover:bg-teal-600">{result ? result : "Send Message"}</button>
                     </div>
                 </form>
